@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import { ToggleLeft } from "@phosphor-icons/react/dist/ssr";
+
 export default function HeroSection() {
   const companies = [
     { name: "HytoCore", logo: "/placeholder.svg" },
@@ -11,19 +13,25 @@ export default function HeroSection() {
   ];
 
   return (
-    <section className="pt-32 pb-16 px-4">
+    <section className="pt-32 pb-16 px-4 bg-[url(/images/hero_bg.svg)] bg-no-repeat bg-center bg-cover">
       <div className="container mx-auto">
-        <div className="text-center max-w-3xl mx-auto">
-          <div className="inline-flex flex-wrap justify-center gap-2 mb-4">
-            <span className="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">
-              Business
+        <div className="text-center  mx-auto">
+          <div className="flex gap-3 justify-center bg-[#FFCC004D] py-2 px-3 text-sm items-center rounded-3xl">
+            <span
+              style={{
+                background:
+                  "linear-gradient(90deg, #2F4F4F 0%, #FFCC00 69.63%, #4CB5A1 100%)",
+                color: "transparent",
+                WebkitBackgroundClip: "text",
+              }}
+            >
+              Businesses
             </span>
-            <span className="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">
-              Talent
-            </span>
+            <ToggleLeft size={20} />
+            <span className="text-[#101010] font-light">Talents</span>
           </div>
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D3B35] mb-6">
+          <h1 className="text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-[#1D3B35] mb-6">
             Simplify the Hiring Process
             <span className="block">of Your Business.</span>
           </h1>

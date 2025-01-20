@@ -8,12 +8,14 @@ import ContactForm from "../forms/ContactForm";
 const HomeComponent = () => {
   return (
     <main>
-      {/* <HeroSection />
-      <FeaturesSection />
+      <HeroSection />
+      <TestimonialsSection />
+      <ContactForm />
+      {/*<FeaturesSection />
       <SpecialtiesSection />
       <MedicalSection />
-      <TestimonialsSection />
-      <ContactForm /> */}
+    
+       */}
     </main>
   );
 };

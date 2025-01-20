@@ -1,13 +1,10 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Sora } from "next/font/google";
 import "./globals.css";
+import Navigation from "@/components/layout/Navigation";
+import Footer from "@/components/layout/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const sora = Sora({
+  variable: "--font-sora",
   subsets: ["latin"],
 });
 
@@ -20,9 +17,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` ${sora.variable} antialiased 2xl:max-w-[1500px] 2xl:mx-auto`}
       >
+        <Navigation />
+        <div className="h-20"></div>
         {children}
+        <Footer />
       </body>
     </html>
   );

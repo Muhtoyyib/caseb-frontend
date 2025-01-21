@@ -9,9 +9,35 @@ import TestimonialCard from "@/components/cards/homecards/TestimonialCard";
 // Import slick carousel styles
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 
 const Testimonials = () => {
   const sliderRef = useRef(null);
+
+  // const settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+
+  //   autoplay: true,
+  //   autoplaySpeed: 3000,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024,
+  //       settings: {
+  //         slidesToShow: 2,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 640,
+  //       settings: {
+  //         slidesToShow: 1,
+  //       },
+  //     },
+  //   ],
+  // };
 
   const settings = {
     dots: false,
@@ -26,12 +52,16 @@ const Testimonials = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
+          centerMode: true, // Optional: this centers the slides for a more polished look
+          focusOnSelect: true, // Allows selecting the slide when clicked
         },
       },
       {
         breakpoint: 640,
         settings: {
           slidesToShow: 1,
+          centerMode: true, // Optional: this centers the slides for a more polished look
+          focusOnSelect: true, // Allows selecting the slide when clicked
         },
       },
     ],
@@ -39,23 +69,23 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      imgSrc: "/Images/image-12.svg",
-      flag: "/Images/Flags.svg",
-      name: "Sophia Lee",
+      imgSrc: "/Images/user.svg",
+      work: "Managing Partner, Amazon",
+      name: "Charle Bently",
       year: "2021",
       quote:
-        "The comprehensive market analysis tools provided by the platform have been invaluable in making informed investment decisions",
+        "We have been partnering with CASEY’B for over 5 years and all Talents provided to us from them have been amzingly talented and decided to their job. I’d recommend them anytime.",
     },
     {
-      imgSrc: "/Images/image-12.svg",
-      flag: "/Images/Flags.svg",
+      imgSrc: "/Images/user.svg",
+      work: "Managing Partner, Amazon",
       name: "John Doe",
       year: "2022",
-      quote: `I've seen significant growth in my portfolio since joining. The expert guidance and diverse investment options are top-notch`,
+      quote: `We have been partnering with CASEY’B for over 5 years and all Talents provided to us from them have been amzingly talented and decided to their job. I’d recommend them anytime.`,
     },
     {
-      imgSrc: "/Images/image-12.svg",
-      flag: "/Images/Flags.svg",
+      imgSrc: "/Images/user.svg",
+      work: "Managing Partner, Amazon",
       name: "Emma Wilson",
       year: "2020",
       quote:
@@ -65,46 +95,56 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="space-y-20 pt-36 w-[90%] mx-auto">
+    <div className="md:pt-32 pt-20 w-[90%] mx-auto">
       {/* Header */}
       <div className="flex flex-col xl:flex-row justify-between gap-10 items-center">
-        <div className="space-y-3 sm:space-y-5">
+        <div className="space-y-3 flex flex-col text-center pb-24 mx-auto sm:space-y-5">
           {/* Header title */}
-          <h2 className="uppercase">
-            <span className="bg-[#F9FDFD] border border-primary rounded-[4px] py-1 px-3">
-              Testimonials
-            </span>
-          </h2>
+          <p>OUR CLIENTS</p>
 
           <div className="space-y-2 sm:space-y-3">
-            <span className="text-4xl font-medium">What Our Clients Say</span>
-            <p className="text-sm sm:text-base md:text-lg">
-              Hear from our satisfied investors about their experience with us
+            <p className="text-[50px] font-semibold">
+              Message from our <span className="text-[#4CB5A1]">CLIENTS</span>{" "}
+              to <span className="text-[#4CB5A1]">YOU</span>.
             </p>
           </div>
-        </div>
-
-        {/* Control */}
-        <div className="flex items-center gap-3">
-          <button
-            onClick={() => sliderRef.current.slickPrev()}
-            className="w-14 h-14 rounded-full border border-secondary flex items-center justify-center hover:bg-secondary hover:text-white transition-colors"
-          >
-            <ArrowLeft size={24} />
-          </button>
-          <button
-            onClick={() => sliderRef.current.slickNext()}
-            className="w-14 h-14 rounded-full border border-secondary flex items-center justify-center hover:bg-secondary hover:text-white transition-colors"
-          >
-            <ArrowRight size={24} />
-          </button>
         </div>
       </div>
 
       {/* Testimonials */}
-      <Slider ref={sliderRef} {...settings}>
+      <Slider
+        className="mb-8 md:mt-2 flex flex-wrap gap-6"
+        ref={sliderRef}
+        {...settings}
+      >
         {testimonials.map((testimonial, index) => (
-          <TestimonialCard key={index} {...testimonial} />
+          <div
+            className="bg-[#F2FFFF] p-6 md:h-[25rem] lg:h-[20rem] h-[23rem] rounded-lg space-y-2 shadow-md"
+            key={index}
+          >
+            <div className="flex space-x-2 p-4">
+              <div className="w-12 h-8">
+                <Image
+                  src={testimonial.imgSrc}
+                  alt="Background"
+                  height={50}
+                  width={50}
+                  quality={100}
+                />
+              </div>
+              <div>
+                <p className="text-xs">{testimonial.work}</p>
+                <div>
+                  <p className="font-semibold">{testimonial.name}</p>
+                  <div className="bg-[#4CB5A1] w-[70%] h-[2px]" />
+                </div>
+              </div>
+            </div>
+
+            <p className="text-sm w-[85%] lg:w-[90%] px-4 leading-8">
+              {testimonial.quote}
+            </p>
+          </div>
         ))}
       </Slider>
     </div>

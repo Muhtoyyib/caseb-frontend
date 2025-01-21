@@ -9,13 +9,11 @@ const HomeComponent = () => {
   return (
     <main>
       <HeroSection />
+      <FeaturesSection />
+      <SpecialtiesSection />
       <TestimonialsSection />
       <ContactForm />
-      {/*<FeaturesSection />
-      <SpecialtiesSection />
-      <MedicalSection />
-    
-       */}
+      {/* <MedicalSection /> */}
     </main>
   );
 };

@@ -66,7 +66,7 @@ export default function SpecialtiesSection() {
                 width={20}
                 height={20}
               />
-              <p className="text-[#2F4F4F]">
+              <p className="text-[#2F4F4F] text-sm">
                 Hire top medical professionals effortlessly.
               </p>
             </div>
@@ -77,13 +77,13 @@ export default function SpecialtiesSection() {
                 width={20}
                 height={20}
               />
-              <p className="text-[#2F4F4F]">
+              <p className="text-[#2F4F4F] text-sm">
                 Get the right team on board with CASEY’B
               </p>
             </div>
             <div className="items-center text-center flex space-x-1">
               <Image src="/images/bulb.svg" alt="bulb" width={20} height={20} />
-              <p className="text-[#2F4F4F]">
+              <p className="text-[#2F4F4F] text-sm">
                 Linking the medical industry with the right talent.
               </p>
             </div>

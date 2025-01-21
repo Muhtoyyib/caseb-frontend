@@ -47,9 +47,9 @@ export default function Navigation() {
                 Home
               </Link>
               <Link
-                href="/about"
+                href="/about-us"
                 className={`block md:inline ] py-5 px-3 md:py-1 ${
-                  pathname === "/about"
+                  pathname === "/about-us"
                     ? "bg-[#4CB5A1] text-white rounded-2xl"
                     : "text-[#101010"
                 }`}

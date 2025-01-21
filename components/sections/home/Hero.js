@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import { ToggleLeft } from "@phosphor-icons/react/dist/ssr";
 
 export default function HeroSection() {

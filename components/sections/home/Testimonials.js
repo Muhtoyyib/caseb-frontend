@@ -52,16 +52,16 @@ const Testimonials = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          centerMode: true, // Optional: this centers the slides for a more polished look
-          focusOnSelect: true, // Allows selecting the slide when clicked
+          centerMode: true,
+          focusOnSelect: true,
         },
       },
       {
         breakpoint: 640,
         settings: {
           slidesToShow: 1,
-          centerMode: true, // Optional: this centers the slides for a more polished look
-          focusOnSelect: true, // Allows selecting the slide when clicked
+          centerMode: true,
+          focusOnSelect: true,
         },
       },
     ],

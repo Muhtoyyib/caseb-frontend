@@ -31,16 +31,16 @@ const Contact = () => {
         </div>
       </section>
 
-      <div className="w-full mx-auto flex flex-col items-center">
-        <div className="bg-[#4CB5A1] py-8 w-full flex flex-row justify-center md:my-16 mb-10 items-center">
-          <div className="items-center flex gap-4 md:gap-0 md:flex-nowrap flex-wrap justify-center lg:space-x-28 md:space-x-10 md:justify-between">
+      {/* <div className="w-full mx-auto flex flex-col justify-center items-center">
+        <div className="bg-[#4CB5A1] py-8 w-full flex flex-row md:my-16 mb-10 items-center">
+          <div className="items-center flex gap-4 md:gap-0 md:flex-nowrap flex-wrap justify-center lg:space-x-8 md:space-x-10 md:justify-between">
             <div className="md:space-y-4 flex items-center flex-col">
               <div className="bg-[#EDFFFC80] rounded-full p-4">
                 <div className="bg-[#4CB5A1] rounded-full p-3">
                   <FaPhoneVolume size={20} />
                 </div>
               </div>
-              <p className="text-[#EDFFFCE6] md:text-base text-[12px] py-2">
+              <p className="text-[#EDFFFCE6] md:text-sm text-[12px] py-2">
                 +353899605969
               </p>
             </div>
@@ -53,22 +53,72 @@ const Contact = () => {
                   <MdEmail size={20} />
                 </div>
               </div>
-              <p className="text-[#EDFFFCE6] md:text-base text-[12px] py-2">
+              <p className="text-[#EDFFFCE6] md:text-sm text-[12px] py-2">
                 info@caseybrecruitmentsagency.com
               </p>
             </div>
 
             <div className="bg-[#FFCC004D] md:h-[7rem] h-[4rem] md:block hidden md:w-2 w-1" />
 
-            <div className="md:space-y-4 flex items-center flex-col">
+            <div className="md:space-y-4 flex justify-center items-center flex-col">
               <div className="bg-[#EDFFFC80] rounded-full p-4">
                 <div className="bg-[#4CB5A1] rounded-full p-3">
                   <MdLocationPin size={20} />
                 </div>
               </div>
-              <p className="text-[#EDFFFCE6] text-center md:text-start md:text-base text-[12px] py-2">
-                Block 6. 85 main street Templemore Co.Tipperary
-                <br className="block md:hidden" /> Ireland Eircode: E41P7N1
+              <p className="text-[#EDFFFCE6] text-center w-[60%] md:text-start md:text-sm text-[12px] py-2">
+                Block 6. 85 main street Templemore Co.Tipperary Ireland
+                Eircode: E41P7N1
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> */}
+
+      <div className="w-full mx-auto flex flex-col justify-center items-center">
+        <div className="bg-[#4CB5A1] py-8 w-full flex flex-row md:my-10 mb-10 items-center justify-center">
+          <div className="flex gap-4 md:gap-8 flex-wrap md:flex-nowrap justify-center items-center w-full">
+            {/* Phone Section */}
+            <div className="flex-1 md:space-y-4 flex items-center flex-col">
+              <div className="bg-[#EDFFFC80] rounded-full p-4 flex justify-center items-center">
+                <div className="bg-[#4CB5A1] rounded-full p-3">
+                  <FaPhoneVolume size={20} />
+                </div>
+              </div>
+              <p className="text-[#EDFFFCE6] md:text-sm text-[12px] py-2">
+                +353899605969
+              </p>
+            </div>
+
+            {/* Vertical Divider */}
+            <div className="bg-[#FFCC004D] md:h-[7rem] h-[4rem] w-1 hidden md:block" />
+
+            {/* Email Section */}
+            <div className="flex-1 md:space-y-4 flex items-center flex-col">
+              <div className="bg-[#EDFFFC80] rounded-full p-4 flex justify-center items-center">
+                <div className="bg-[#4CB5A1] rounded-full p-3">
+                  <MdEmail size={20} />
+                </div>
+              </div>
+              <p className="text-[#EDFFFCE6] md:text-sm text-[12px] py-2">
+                info@caseybrecruitmentsagency.com
+              </p>
+            </div>
+
+            {/* Vertical Divider */}
+            <div className="bg-[#FFCC004D] md:h-[7rem] h-[4rem] w-1 hidden md:block" />
+
+            {/* Location Section */}
+            <div className="flex-1 md:space-y-4 flex items-center flex-col">
+              <div className="bg-[#EDFFFC80] rounded-full p-4 flex justify-center items-center">
+                <div className="bg-[#4CB5A1] rounded-full p-3">
+                  <MdLocationPin size={20} />
+                </div>
+              </div>
+              <p className="text-[#EDFFFCE6] text-center sm:w-[70%] md:w-[60%] text-sm text-[12px] py-2">
+                Block 6. 85 Main Street Templemore Co. Tipperary, Ireland
+                <br />
+                Eircode: E41P7N1
               </p>
             </div>
           </div>

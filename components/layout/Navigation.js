@@ -67,9 +67,9 @@ export default function Navigation() {
                 Our Specialties
               </Link>
               <Link
-                href="/contact"
+                href="/contact-us"
                 className={`block md:inline ] py-5 px-3 md:py-1 ${
-                  pathname === "/contact"
+                  pathname === "/contact-us"
                     ? "bg-[#4CB5A1] text-white rounded-2xl"
                     : "text-[#101010"
                 }`}

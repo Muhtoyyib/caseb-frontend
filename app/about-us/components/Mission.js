@@ -47,7 +47,7 @@ const Mission = () => {
       </div>
 
       <div className="md:flex py-6 space-y-4 md:space-y-0">
-        <div className="bg-[#4CB5A1] md:h-[271px] flex flex-col justify-around md:w-[508px] p-6 rounded-xl shadow-md text-white">
+        <div className="bg-[#4CB5A1] md:h-[271px] flex flex-col justify-around md:w-[508px] p-6 rounded-xl text-white">
           <p className="md:text-[30px]">MISSION</p>
           <p className="text-sm w-fit leading-6">
             To connect talented professionals with exceptional opportunities
@@ -65,7 +65,7 @@ const Mission = () => {
           className="hidden md:block"
         />
 
-        <div className="bg-[#FAFFFF] md:h-[271px] md:w-[508px] text-[#2F4F4F] flex flex-col p-6 rounded-xl border border-[#00000033] shadow-md">
+        <div className="bg-[#FAFFFF] md:h-[271px] md:w-[508px] text-[#2F4F4F] flex flex-col p-6 rounded-xl border border-[#00000033]">
           <p className="md:text-[30px] md:pb-8 pb-14 pt-2 ">MISSION</p>
           <p className="text-sm w-fit leading-6">
             To be the leading recruitment agency known for bridging the gap

@@ -95,7 +95,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="md:pt-32 pt-20 w-[90%] mx-auto">
+    <div className="md:pt-32 pt-14 w-[90%] mx-auto">
       {/* Header */}
       <div className="flex flex-col xl:flex-row justify-between gap-10 items-center">
         <div className="space-y-3 flex flex-col text-center pb-24 mx-auto sm:space-y-5">
@@ -103,7 +103,7 @@ const Testimonials = () => {
           <p>OUR CLIENTS</p>
 
           <div className="space-y-2 sm:space-y-3">
-            <p className="text-[50px] font-semibold">
+            <p className="md:text-[50px] text-[35px] font-semibold">
               Message from our <span className="text-[#4CB5A1]">CLIENTS</span>{" "}
               to <span className="text-[#4CB5A1]">YOU</span>.
             </p>
@@ -119,7 +119,7 @@ const Testimonials = () => {
       >
         {testimonials.map((testimonial, index) => (
           <div
-            className="bg-[#F2FFFF] p-6 md:h-[25rem] lg:h-[20rem] h-[23rem] rounded-lg space-y-2 shadow-md"
+            className="bg-[#F2FFFF] p-6 md:h-[25rem] lg:h-[20rem] h-[20rem] rounded-lg space-y-2 shadow-md"
             key={index}
           >
             <div className="flex space-x-2 p-4">
@@ -135,13 +135,15 @@ const Testimonials = () => {
               <div>
                 <p className="text-xs">{testimonial.work}</p>
                 <div>
-                  <p className="font-semibold">{testimonial.name}</p>
+                  <p className="font-semibold md:text-base text-sm">
+                    {testimonial.name}
+                  </p>
                   <div className="bg-[#4CB5A1] w-[70%] h-[2px]" />
                 </div>
               </div>
             </div>
 
-            <p className="text-sm w-[85%] lg:w-[90%] px-4 leading-8">
+            <p className="md:text-sm text-xs w-full md:w-[85%] lg:w-[90%] px-4 md:leading-8 leading-6">
               {testimonial.quote}
             </p>
           </div>

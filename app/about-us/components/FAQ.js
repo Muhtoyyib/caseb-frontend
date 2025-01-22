@@ -72,10 +72,10 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="mx-auto mb-44 w-fit">
+    <div className="mx-auto lg:mb-44 mb-16 w-fit">
       <div className="mx-auto w-fit flex flex-col">
         <p className="text-sm text-center md:py-4">FAQs</p>
-        <h1 className="text-2xl md:text-[50px] leading-[4rem] font-bold text-[#1D3B35] mb-6">
+        <h1 className="text-2xl md:text-[45px] leading-[4rem] font-bold text-[#1D3B35] mb-6">
           Frequently asked questions
         </h1>
       </div>
@@ -134,7 +134,7 @@ const FAQ = () => {
           ))}
         </div>
 
-        <div className="hidden md:flex-col md:mt-6 space-y-4 gap-6">
+        <div className="hidden lg:flex flex-col md:mt-6 gap-6">
           {FAQ.map((faq, index) => (
             <div
               key={index}

@@ -41,7 +41,7 @@ const Contact = () => {
                 </div>
               </div>
               <p className="text-[#EDFFFCE6] md:text-base text-[12px] py-2">
-                +921-01-647-67383
+                +353899605969
               </p>
             </div>
 
@@ -54,7 +54,7 @@ const Contact = () => {
                 </div>
               </div>
               <p className="text-[#EDFFFCE6] md:text-base text-[12px] py-2">
-                CaseyB@recruitment.agency
+                info@caseybrecruitmentsagency.com
               </p>
             </div>
 
@@ -67,8 +67,8 @@ const Contact = () => {
                 </div>
               </div>
               <p className="text-[#EDFFFCE6] text-center md:text-start md:text-base text-[12px] py-2">
-                Bloc 3, flat A6, Floor 3, <br className="block md:hidden" />{" "}
-                Houston, USA.
+                Block 6. 85 main street Templemore Co.Tipperary
+                <br className="block md:hidden" /> Ireland Eircode: E41P7N1
               </p>
             </div>
           </div>

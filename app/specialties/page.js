@@ -18,7 +18,7 @@ const Specialties = () => {
       <section className="md:pt-32 pt-12 md:pb-16 pb-6 px-4 bg-[url(/images/hero_bg.svg)] bg-no-repeat bg-center bg-cover">
         <div className="container mx-auto">
           <div className="text-center  mx-auto">
-            <h1 className="text-3xl md:text-5xl lg:text-5xl md:leading-[4rem] xl:text-6xl font-bold text-[#1D3B35] mb-6">
+            <h1 className="text-3xl md:text-5xl lg:text-5xl md:leading-[4.5rem] xl:text-6xl font-bold text-[#1D3B35] mb-6">
               Your Recruitment <br className="hidden md:block" />
               Specialists Across <br className="hidden md:block" /> Industries
             </h1>

@@ -102,7 +102,7 @@ const Testimonials = () => {
           {/* Header title */}
           <p>OUR CLIENTS</p>
 
-          <div className="space-y-2 sm:space-y-3">
+          <div className="pt-2 sm:space-y-3">
             <p className="md:text-[50px] text-[35px] font-semibold">
               Message from our <span className="text-[#4CB5A1]">CLIENTS</span>{" "}
               to <span className="text-[#4CB5A1]">YOU</span>.
@@ -113,7 +113,7 @@ const Testimonials = () => {
 
       {/* Testimonials */}
       <Slider
-        className="mb-8 md:mt-2 flex flex-wrap gap-6"
+        className="mb-8 flex flex-wrap gap-6"
         ref={sliderRef}
         {...settings}
       >

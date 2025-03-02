@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Mission = () => {
+  const [activeContainer, setActiveContainer] = useState(0);
   const mission = [
     {
       title: "EXPERTISE",
@@ -34,6 +37,16 @@ const Mission = () => {
         "Experience a seamless, hassle-free recruitment process designed for quick and effective results.",
     },
   ];
+
+  const handleChange = () => {
+    setActiveContainer((prev) => (prev === mission.length - 1 ? 0 : prev + 1));
+  };
+
+  useEffect(() => {
+    const interval = setInterval(handleChange, 3000);
+    return () => clearInterval(interval);
+  });
+
   return (
     <div className="md:mx-auto mx-14 w-fit md:mt-28 flex flex-col">
       <div className="flex flex-col justify-center items-center">
@@ -78,25 +91,27 @@ const Mission = () => {
       <div className="md:my-24 my-8">
         <p className="text-sm text-center py-4">WHY CHOOSE US?</p>
         <div className="my-6 md:flex items-center justify-between">
-          <div className="">
+          {/* <div className="">
             <div className="md:w-[350px] w-[100%]">
               {mission.map((item, i) => (
                 <div key={i} className="pb-3">
                   <p
                     className={`${
-                      i === 0 ? "text-[#2F4F4F] font-semibold" : ""
+                      i === activeContainer
+                        ? "text-[#2F4F4F] font-semibold"
+                        : ""
                     } py-2`}
                   >
                     {item.title}
                   </p>
                   <div
                     className={`${
-                      i == 0 ? "bg-[#4CB5A1]" : "bg-[#F1FFFCE6]"
+                      i == activeContainer ? "bg-[#4CB5A1]" : "bg-[#F1FFFCE6]"
                     } border border-[#00000033] p-8 rounded-lg`}
                   >
                     <p
                       className={`text-sm w-full ${
-                        i == 0 ? "text-white" : ""
+                        i == activeContainer ? "text-white" : ""
                       } leading-6`}
                     >
                       {item.description}
@@ -105,6 +120,64 @@ const Mission = () => {
                 </div>
               ))}
             </div>
+          </div> */}
+
+          <div className="md:w-[350px] w-[100%]">
+            {mission.map((item, i) => (
+              <div key={i} className="flex items-center gap-4 pb-6">
+                {/* Timeline (Dot + Line) */}
+                <div className="flex flex-col items-center">
+                  {/* Outer Circle */}
+                  <div
+                    className={`rounded-full w-[28px] h-[28px] flex items-center justify-center ${
+                      i === activeContainer
+                        ? "bg-[#2F4F4F]"
+                        : "bg-[#D9D9D9] border"
+                    }`}
+                  >
+                    {/* Inner Circle */}
+                    <div
+                      className={`rounded-full w-[14px] h-[14px] ${
+                        i === activeContainer
+                          ? "bg-[#D9D9D9] border"
+                          : "bg-white"
+                      }`}
+                    ></div>
+                  </div>
+
+                  {/* Connector Line (only if not last item) */}
+                  {i !== mission.length - 1 + 1 && (
+                    <span className="h-16 w-[2px] bg-[#D9D9D9]"></span>
+                  )}
+                </div>
+
+                {/* Mission Card */}
+                <div className="flex-1">
+                  <p
+                    className={`${
+                      i === activeContainer
+                        ? "text-[#2F4F4F] font-semibold"
+                        : ""
+                    } py-2`}
+                  >
+                    {item.title}
+                  </p>
+                  <div
+                    className={`${
+                      i === activeContainer ? "bg-[#4CB5A1]" : "bg-[#F1FFFCE6]"
+                    } border border-[#00000033] p-8 rounded-lg`}
+                  >
+                    <p
+                      className={`text-sm w-full ${
+                        i === activeContainer ? "text-white" : ""
+                      } leading-6`}
+                    >
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
 
           <div className="flex justify-center">

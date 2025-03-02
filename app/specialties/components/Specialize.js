@@ -1,6 +1,4 @@
-import React from "react";
 import Button from "./Button";
-import Testimonials from "@/components/sections/home/Testimonials";
 
 const Specialize = () => {
   return (

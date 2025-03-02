@@ -2,6 +2,7 @@ import Image from "next/image";
 import Figures from "./components/Figures";
 import Mission from "./components/Mission";
 import FAQ from "./components/FAQ";
+import Marquee from "react-fast-marquee";
 
 const AboutUs = () => {
   const companies = [
@@ -36,7 +37,7 @@ const AboutUs = () => {
               <p className="md:text-sm text-[12px] font-semibold bg-[#D2FFF6] md:p-4 py-4 px-2 text-[#000000] mb-8">
                 #We are trusted by 50+ businesses and 1500+ talents.
               </p>
-              <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 opacity-70">
+              {/* <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 opacity-70">
                 {companies.map((company) => (
                   <div key={company.name} className="w-20 md:w-32">
                     <Image
@@ -48,7 +49,55 @@ const AboutUs = () => {
                     />
                   </div>
                 ))}
-              </div>
+              </div> */}
+
+              <Marquee className="gap-5 md:gap-2 md:mt-6 grid items-center grid-cols-2 md:grid-cols-3 lg:grid-cols-5 max-w-[52rem] mx-auto w-full">
+                <div className="mr-5">
+                  <Image
+                    src={"/images/logo1.svg"}
+                    alt="logo"
+                    width={100}
+                    height={100}
+                    className="w-full h-8 md:h-10 object-contain"
+                  />
+                </div>
+                <div className="mr-16">
+                  <Image
+                    src={"/images/logo2.svg"}
+                    alt="logo"
+                    width={100}
+                    height={100}
+                    className="w-full h-8 md:h-10 object-contain"
+                  />
+                </div>
+                <div className="mr-16">
+                  <Image
+                    src={"/images/logo3.svg"}
+                    alt="logo"
+                    width={100}
+                    height={100}
+                    className="w-full h-8 md:h-10 object-contain"
+                  />
+                </div>
+                <div className="mr-16">
+                  <Image
+                    src={"/images/logo4.svg"}
+                    alt="logo"
+                    width={100}
+                    height={100}
+                    className="w-full h-8 md:h-10 object-contain"
+                  />
+                </div>
+                <div className="mr-16">
+                  <Image
+                    src={"/images/logo5.svg"}
+                    alt="logo"
+                    width={100}
+                    height={100}
+                    className="w-full h-8 md:h-10 object-contain"
+                  />
+                </div>
+              </Marquee>
             </div>
           </div>
         </div>

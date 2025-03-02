@@ -33,7 +33,7 @@ export default function FeaturesSection() {
       <div className="bg-[#1D3B35] text-white w-full flex-1">
         <div className="container bg-[url(/images/hero_bg.svg)] w-full space-y-2 md:py-28 py-12 bg-repeat z-50 bg-center bg-contain mx-auto px-8">
           <p className="text-[12px] py-2">AT A GLANCE</p>
-          <h2 className="text-2xl md:text-[60px] md:leading-[65px] font-bold mb-4">
+          <h2 className="text-3xl md:text-[60px] md:leading-[65px] font-bold mb-4">
             We are Your <br />
             Co-to Agency <br />
             <p className="font-thin">

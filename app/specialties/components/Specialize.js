@@ -14,10 +14,13 @@ const Specialize = () => {
             </p>
           </div>
 
-          <div className="flex mx-2 md:justify-around space-x-6">
-            <Button className="bg-[#D4F3F3] text-sm" text="Become a Talent" />
+          <div className="flex mx-2 md:justify-start justify-between md:space-x-6">
             <Button
-              className="bg-[#2F4F4F] text-sm text-white"
+              className="bg-[#D4F3F3] text-xs md:text-sm"
+              text="Become a Talent"
+            />
+            <Button
+              className="bg-[#2F4F4F] text-xs md:text-sm text-white"
               text="Hire a Talent"
             />
           </div>
@@ -31,10 +34,13 @@ const Specialize = () => {
               </p>
             </div>
 
-            <div className="flex mx-4 space-x-6">
-              <Button className="bg-[#D4F3F3] text-sm" text="Become a Talent" />
+            <div className="flex mx-2 md:justify-start justify-between md:space-x-8">
               <Button
-                className="bg-[#2F4F4F] text-sm text-white"
+                className="bg-[#D4F3F3] text-xs md:text-sm"
+                text="Become a Talent"
+              />
+              <Button
+                className="bg-[#2F4F4F] text-xs md:text-sm text-white"
                 text="Hire a Talent"
               />
             </div>
@@ -48,10 +54,13 @@ const Specialize = () => {
               </p>
             </div>
 
-            <div className="flex mx-4 space-x-6">
-              <Button className="bg-[#D4F3F3] text-sm" text="Become a Talent" />
+            <div className="flex mx-2 md:justify-start justify-between md:space-x-8">
               <Button
-                className="bg-[#2F4F4F] text-sm text-white"
+                className="bg-[#D4F3F3] text-xs md:text-sm"
+                text="Become a Talent"
+              />
+              <Button
+                className="bg-[#2F4F4F] text-xs md:text-sm text-white"
                 text="Hire a Talent"
               />
             </div>
@@ -68,10 +77,13 @@ const Specialize = () => {
             </p>
           </div>
 
-          <div className="flex mx-4 space-x-6">
-            <Button className="bg-[#D4F3F3] text-sm" text="Become a Talent" />
+          <div className="flex mx-2 md:justify-start justify-between md:space-x-8">
             <Button
-              className="bg-[#2F4F4F] text-sm text-white"
+              className="bg-[#D4F3F3] text-xs md:text-sm"
+              text="Become a Talent"
+            />
+            <Button
+              className="bg-[#2F4F4F] text-xs md:text-sm text-white"
               text="Hire a Talent"
             />
           </div>
@@ -87,10 +99,13 @@ const Specialize = () => {
               </p>
             </div>
 
-            <div className="flex mx-4 space-x-6">
-              <Button className="bg-[#D4F3F3] text-sm" text="Become a Talent" />
+            <div className="flex mx-2 md:justify-start justify-between md:space-x-8">
               <Button
-                className="bg-[#4CB5A1] text-sm text-white"
+                className="bg-[#D4F3F3] text-xs md:text-sm"
+                text="Become a Talent"
+              />
+              <Button
+                className="bg-[#4CB5A1] text-xs md:text-sm text-white"
                 text="Hire a Talent"
               />
             </div>
@@ -104,10 +119,13 @@ const Specialize = () => {
               </p>
             </div>
 
-            <div className="flex mx-4 space-x-6">
-              <Button className="bg-[#D4F3F3] text-sm" text="Become a Talent" />
+            <div className="flex mx-2 md:justify-start justify-between md:space-x-8">
               <Button
-                className="bg-[#4CB5A1] text-sm text-white"
+                className="bg-[#D4F3F3] text-xs md:text-sm"
+                text="Become a Talent"
+              />
+              <Button
+                className="bg-[#4CB5A1] text-xs md:text-sm text-white"
                 text="Hire a Talent"
               />
             </div>
@@ -123,10 +141,13 @@ const Specialize = () => {
               </p>
             </div>
 
-            <div className="flex mx-2 md:justify-around space-x-4">
-              <Button className="bg-[#D4F3F3] text-sm" text="Become a Talent" />
+            <div className="flex mx-2 md:justify-start justify-between md:space-x-8">
               <Button
-                className="bg-[#2F4F4F] text-sm text-white"
+                className="bg-[#D4F3F3] text-xs md:text-sm"
+                text="Become a Talent"
+              />
+              <Button
+                className="bg-[#2F4F4F] text-xs md:text-sm text-white"
                 text="Hire a Talent"
               />
             </div>
@@ -140,13 +161,13 @@ const Specialize = () => {
                 </p>
               </div>
 
-              <div className="flex mx-4 space-x-6">
+              <div className="flex mx-2 md:justify-start justify-between md:space-x-8">
                 <Button
-                  className="bg-[#D4F3F3] text-sm"
+                  className="bg-[#D4F3F3] text-xs md:text-sm"
                   text="Become a Talent"
                 />
                 <Button
-                  className="bg-[#2F4F4F] text-sm text-white"
+                  className="bg-[#2F4F4F] text-xs md:text-sm text-white"
                   text="Hire a Talent"
                 />
               </div>
@@ -161,13 +182,13 @@ const Specialize = () => {
                 </p>
               </div>
 
-              <div className="flex mx-4 space-x-6">
+              <div className="flex mx-2 md:justify-start justify-between md:space-x-8">
                 <Button
-                  className="bg-[#D4F3F3] text-sm"
+                  className="bg-[#D4F3F3] text-xs md:text-sm"
                   text="Become a Talent"
                 />
                 <Button
-                  className="bg-[#2F4F4F] text-sm text-white"
+                  className="bg-[#2F4F4F] text-xs md:text-sm text-white"
                   text="Hire a Talent"
                 />
               </div>
@@ -183,10 +204,13 @@ const Specialize = () => {
             </p>
           </div>
 
-          <div className="flex mx-4 space-x-6">
-            <Button className="bg-[#D4F3F3] text-sm" text="Become a Talent" />
+          <div className="flex mx-2 md:justify-start justify-between md:space-x-8">
             <Button
-              className="bg-[#2F4F4F] text-sm text-white"
+              className="bg-[#D4F3F3] text-xs md:text-sm"
+              text="Become a Talent"
+            />
+            <Button
+              className="bg-[#2F4F4F] text-xs md:text-sm text-white"
               text="Hire a Talent"
             />
           </div>

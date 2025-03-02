@@ -2,7 +2,7 @@ import { ToggleLeft } from "lucide-react";
 
 export default function ContactForm() {
   return (
-    <div className="bg-[#1D3B35] md:mx-14 md:mb-14 mx-8 mb-8 rounded-xl">
+    <div className="bg-[#1D3B35] md:mx-14 md:mb-14 mb-8 rounded-xl">
       <div className="container px-4 bg-[url(/images/contact_net.svg)] pb-12 pt-16 bg-repeat z-60 bg-center bg-contain">
         <div className="w-full lg:px-44 px-18 text-center">
           <p className="text-[#E8FFFBE6] md:pb-12 pb-4 text-[12px]">

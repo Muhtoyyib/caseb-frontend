@@ -9,7 +9,7 @@ export default function SpecialtiesSection() {
     "Construction",
     "IT",
     "Transportation",
-    "Machine & Engineering",
+    "Machine Engineer",
     "Retail marketing",
     "Agricultural",
     "Hospitality",
@@ -41,7 +41,7 @@ export default function SpecialtiesSection() {
     },
     {
       id: 5,
-      title: "Mechanic & engineering",
+      title: "Mechanic engineer",
       image: "/images/mechanicEngineer.svg",
     },
     {
@@ -85,7 +85,7 @@ export default function SpecialtiesSection() {
     <section className="py-8 md:pt-24">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1D3B35] mb-8 md:mb-16">
-          We cover various specialties across
+          We cover various specialties across{" "}
           <br className="hidden md:inline" />
           different industries.
         </h2>
@@ -178,14 +178,14 @@ export default function SpecialtiesSection() {
         />
 
         <div className="lg:px-[17rem] md:px-[3rem] px-4 items-center absolute w-full">
-          <div className="flex items-center justify-between">
-            <p className="bg-[#D4F3F3] rounded-full md:text-base text-sm p-2 md:py-2 md:px-6 font-semibold">
+          <div className="flex items-center space-x-2 justify-between">
+            <p className="bg-[#D4F3F3] rounded-full md:text-base text-[11px] p-2 md:py-2 md:px-6 font-semibold">
               Become a Talent →
             </p>
-            <p className="text-[#2F4F4F] md:text-lg text-[12px] font-semibold">
+            <p className="text-[#2F4F4F] md:text-lg text-[11px] text-center font-semibold">
               {industries[activeTab].title}
             </p>
-            <p className="bg-[#D4F3F3] rounded-full md:text-base text-sm p-2 md:py-2 md:px-6 font-semibold">
+            <p className="bg-[#D4F3F3] rounded-full md:text-base text-[11px] p-2 md:py-2 md:px-6 font-semibold">
               Hire a Talent →
             </p>
           </div>

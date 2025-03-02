@@ -24,9 +24,9 @@ export default function HeroSection() {
     <section className="md:pt-32 pt-12 md:pb-16 pb-8 px-4 bg-[url(/images/hero_bg.svg)] bg-no-repeat bg-center bg-cover">
       <div className="container mx-auto">
         {/* Business Switch */}
-        <div className="text-center  mx-auto">
+        <div className="text-center mx-auto">
           {!toggleTalent && (
-            <div className="flex w-fit mx-auto mb-8 gap-3 justify-center bg-[#FFCC004D] py-3 px-4 text-sm items-center rounded-3xl">
+            <div className="flex w-fit mx-auto mb-8 gap-3 justify-center bg-[#FFCC004D] py-2 md:py-3 px-4 text-sm items-center rounded-3xl">
               <span
                 className="w-fit"
                 style={{
@@ -48,7 +48,7 @@ export default function HeroSection() {
 
           {/* Toggle */}
           {toggleTalent && (
-            <div className="flex w-fit mx-auto mb-8 gap-3 justify-center bg-[#FFCC004D] py-3 px-4 text-sm items-center rounded-3xl">
+            <div className="flex w-fit mx-auto mb-8 gap-3 justify-center bg-[#FFCC004D] py-2 md:py-3 px-4 text-sm items-center rounded-3xl">
               <span className="text-[#101010] font-light">Business</span>
               <BiToggleRight
                 onClick={() => setToggleTalent(!toggleTalent)}
@@ -79,7 +79,7 @@ export default function HeroSection() {
 
         {/*  */}
         <div className="my-16 mx-auto flex flex-col items-center">
-          <p className="text-sm font-semibold bg-[#D2FFF6] p-4 text-[#000000] mb-8">
+          <p className="md:text-sm text-xs font-semibold text-center bg-[#D2FFF6] p-4 text-[#000000] mb-8">
             #We are trusted by 50+ businesses and 1500+ talents.
           </p>
           {/* <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 opacity-70">

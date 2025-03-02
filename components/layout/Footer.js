@@ -43,7 +43,7 @@ export default function Footer() {
             <Link href="/" className="text-gray-400 hover:text-white">
               Home
             </Link>
-            <Link href="/about" className="text-gray-400 hover:text-white">
+            <Link href="/about-us" className="text-gray-400 hover:text-white">
               About Us
             </Link>
             <Link
@@ -52,7 +52,7 @@ export default function Footer() {
             >
               Our Specialties
             </Link>
-            <Link href="/contact" className="text-gray-400 hover:text-white">
+            <Link href="/contact-us" className="text-gray-400 hover:text-white">
               Contact Us
             </Link>
           </nav>

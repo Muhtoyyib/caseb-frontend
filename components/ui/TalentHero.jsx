@@ -65,13 +65,13 @@ const TalentHero = ({ toggleTalent }) => {
     >
       <h1 className="text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-[#1D3B35] mb-6">
         Simplify Your Job{" "}
-        <span className="bg-[url('/images/line.svg')] bg-no-repeat">
+        <span className="bg-[url('/images/line.svg')] bg-contain bg-no-repeat">
           Search{" "}
         </span>
-        <br />
+        <br className={"md:block hidden"} />
         Journey.
       </h1>
-      <p className="text-gray-600 text-base w-[60%] mx-auto md:text-lg mb-8">
+      <p className="text-gray-600 text-base md:w-[60%] mx-auto md:text-lg mb-8">
         Unlock access to exciting{" "}
         <span className="text-[#FFCC00E6]">career opportunities</span>. We{" "}
         <span className="text-[#FFCC00E6]">connect</span> skilled professionals
@@ -79,7 +79,7 @@ const TalentHero = ({ toggleTalent }) => {
       </p>
       <Link
         href="/contact-us"
-        className="bg-[#1D3B35] text-white rounded-full hover:bg-[#2a554c] px-6 md:px-8 md:py-4 text-base md:text-lg"
+        className="bg-[#1D3B35] text-white rounded-full hover:bg-[#2a554c] px-6 py-3 md:px-8 md:py-4 text-base md:text-lg"
       >
         Get Hired →
       </Link>

@@ -22,7 +22,7 @@ const Contact = () => {
               Get in touch with us today.
             </h1>
 
-            <p className="text-gray-600 text-[14px] md:w-[65%] w-[80%] text-center flex-col mx-auto md:text-lg md:mb-8 mb-4">
+            <p className="text-gray-600 text-[14px] md:w-[65%] w-[90%] text-center flex-col mx-auto md:text-lg md:mb-8 mb-4">
               Visit our office to discuss your recruitment needs or career
               opportunities. Our friendly team is here to assist you and provide
               the support you need to achieve your goals.
@@ -100,7 +100,7 @@ const Contact = () => {
                   <MdEmail size={20} />
                 </div>
               </div>
-              <p className="text-[#EDFFFCE6] md:text-sm text-[12px] py-2">
+              <p className="text-[#EDFFFCE6] md:text-sm text-[12px] p-2 md:py-2">
                 info@caseybrecruitmentsagency.com
               </p>
             </div>
@@ -115,9 +115,9 @@ const Contact = () => {
                   <MdLocationPin size={20} />
                 </div>
               </div>
-              <p className="text-[#EDFFFCE6] text-center sm:w-[70%] md:w-[60%] text-sm text-[12px] py-2">
+              <p className="text-[#EDFFFCE6] text-center w-[70%] md:w-[60%] text-sm text-[12px] py-2">
                 Block 6. 85 Main Street Templemore Co. Tipperary, Ireland
-                <br />
+                <br className="hidden md:block" />
                 Eircode: E41P7N1
               </p>
             </div>

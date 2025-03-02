@@ -97,15 +97,15 @@ const BusinessHero = ({ toggleTalent }) => {
       animate="center"
       exit="exit"
       transition={{ duration: 0.7, ease: "easeInOut" }}
-      className="w-full text-center mx-auto mb-8"
+      className="w-full text-center mx-auto mb-6 md:mb-8"
     >
       <h1 className="text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-[#1D3B35] mb-6">
-        Simplify the Hiring Process <br />
-        <span className="bg-[url('/images/line.svg')] bg-no-repeat">
+        Simplify the Hiring Process <br className="hidden md:block" />
+        <span className="bg-[url('/images/line.svg')] bg-contain bg-no-repeat">
           Business.
         </span>
       </h1>
-      <p className="text-gray-600 text-base w-[60%] mx-auto md:text-lg mb-8">
+      <p className="text-gray-600 text-base md:w-[60%] md:px-0 px-8 mx-auto md:text-lg mb-8">
         We have a proven track record of{" "}
         <span className="text-[#4CD4C1]">successful hiring</span>. We specialize
         in recruiting professionals across{" "}
@@ -113,7 +113,7 @@ const BusinessHero = ({ toggleTalent }) => {
       </p>
       <Link
         href="/contact-us"
-        className="bg-[#1D3B35] text-white rounded-full hover:bg-[#2a554c] px-6 md:px-8 md:py-4 text-base md:text-lg"
+        className="bg-[#1D3B35] text-white rounded-full hover:bg-[#2a554c] px-6 md:px-8 py-3 md:py-4 text-base md:text-lg"
       >
         Hire a Talent →
       </Link>
